@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Workplace English B1 · Learn and practise</title>
+  <meta name="description" content="Build practical B1 workplace English through lessons on emails, meetings, calls, interviews, and real-world tasks.">
+  <meta name="theme-color" content="#286b80">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Caveat:wght@600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="business-english.css">
+</head>
+<body data-view="app">
+  <main>
+    <div class="meta">
+      <div class="meta-actions">
+        <a class="back" href="index.html">Back to B1 preparation</a>
+        <span class="biz-meta-title">Workplace English</span>
+        <button class="theme-toggle" id="biz-theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span class="theme-toggle-label">Light theme</span></button>
+      </div>
+      <span>B1 practice · Workplace English</span>
+    </div>
+    <div class="tabs" id="biz-panel-tabs" role="tablist" aria-label="Workplace English course panels">
+      <button type="button" data-panel="main" class="on" role="tab" aria-selected="true">Course</button>
+      <button type="button" data-panel="left" role="tab" aria-selected="false">Learning path</button>
+      <button type="button" data-panel="right" role="tab" aria-selected="false">Progress</button>
+    </div>
+    <div class="layout" id="biz-layout" data-tab="main">
+      <aside class="side left" id="biz-left" aria-label="Workplace English learning path"></aside>
+      <div class="center" id="biz-center">
+        <div id="biz-app"></div>
+      </div>
+      <aside class="side right" id="biz-right" aria-label="Workplace English progress"></aside>
+    </div>
+  </main>
+  <script src="business-english.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Evaluación de inglés B1</title>
+  <rect width="128" height="128" rx="28" fill="#286b80"/>
+  <path d="M20 34c17-7 31-3 44 8v56c-13-11-27-15-44-8V34Zm88 0c-17-7-31-3-44 8v56c13-11 27-15 44-8V34Z" fill="#fffefa" stroke="#d5e7e8" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M31 49c9-2 17 0 24 4m-24 8c9-2 17 0 24 4m42-16c-9-2-17 0-24 4m24 8c-9-2-17 0-24 4" fill="none" stroke="#286b80" stroke-linecap="round" stroke-width="4"/>
+  <circle cx="91" cy="24" r="11" fill="#e6b85c"/>
+  <path d="m91 17 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#fffefa"/>
+</svg>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light" data-study-motion="on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Preparación para el examen B1 de inglés</title>
+<meta name="description" content="Prepárate para un examen B1 de inglés con prácticas, explicaciones, repaso de errores y una guía de estudio de ocho semanas.">
+<meta name="theme-color" content="#286b80">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Caveat:wght@600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-view="cover">
+<div id="cover" aria-label="Portada">
+  <div class="cv">
+    <header class="cv-top"><a class="site-brand" href="./" aria-label="Preparación B1, inicio"><img src="logo.svg" alt=""><span>Preparación B1</span></a><span>Inglés · Nivel intermedio (MCER)</span><button class="theme-toggle" id="cover-theme-toggle" type="button" aria-label="Cambiar al tema oscuro" aria-pressed="false"><span class="theme-toggle-label">Tema claro</span></button></header>
+    <div class="cv-hero">
+      <section class="sheet cv-sheet">
+        <div class="scale" aria-label="Escala MCER, nivel evaluado: B1"><span>A1</span><span>A2</span><span class="on">B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+        <h1 class="cv-title">Prepárate para tu examen B1 de inglés</h1>
+        <p class="cv-sub">Practica, aprende de tus errores y avanza paso a paso en gramática, vocabulario y las cuatro destrezas.</p>
+        <div class="cv-cta">
+          <button class="btn big" id="enter" type="button">Empezar una práctica</button>
+          <button class="btn line" id="study-cover" type="button">Ver la guía B1</button>
+          <a class="btn line" href="business-english.html">Inglés B1 para el trabajo</a>
+          <span class="cv-stat" id="cvStat"></span>
+        </div>
+        <p class="fine">Material de práctica; no es un examen oficial ni otorga certificación.</p>
+      </section>
+      <aside class="cv-sample" aria-hidden="true">
+        <div class="grade"><svg viewBox="0 0 220 116"><path d="M26 60C20 28 80 10 126 12C186 14 214 34 206 62C198 92 140 106 92 103C42 100 12 86 24 54C30 40 44 32 58 27"/></svg><b>12/15</b></div>
+        <div class="cv-card">
+          <div class="answers"><div class="gb ok">✓</div><div class="gb ok">✓</div><div class="gb bad">✕</div><div class="gb ok">✓</div><div class="gb ok">✓</div><div class="gb ok">✓</div><div class="gb now">7</div><div class="gb">8</div><div class="gb">9</div><div class="gb">10</div><div class="gb">11</div><div class="gb">12</div><div class="gb">13</div><div class="gb">14</div><div class="gb">15</div></div>
+          <div class="qhead"><span>Pregunta 7 de 15, gramática</span><span>Tiempo 3:42</span></div>
+          <p class="qtext">If it rains tomorrow, we ___ at home.</p>
+          <div class="opts">
+            <div class="opt dim"><span class="k">a)</span><span class="t">stay</span></div>
+            <div class="opt ok"><span class="k">b)</span><span class="t">will stay</span><svg viewBox="0 0 24 24"><path class="mk g" d="M3.5 12.5l5.5 5.5L21 5.5"/></svg></div>
+            <div class="opt dim"><span class="k">c)</span><span class="t">would stay</span></div>
+            <div class="opt dim"><span class="k">d)</span><span class="t">stayed</span></div>
+          </div>
+          <div class="note ok"><b>Bien.</b> Primer condicional: if + presente, will + verbo.</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="meta"><div class="meta-actions"><button class="back" id="tocover" type="button">Salir de la práctica</button><button class="back" id="study-open" type="button">Guía B1</button><button class="theme-toggle" id="app-theme-toggle" type="button" aria-label="Cambiar al tema oscuro" aria-pressed="false"><span class="theme-toggle-label">Tema claro</span></button></div><span id="pool"></span></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Secciones de preparación B1"><button type="button" data-t="main" class="on" role="tab" aria-selected="true">Práctica</button><button type="button" data-t="left" role="tab" aria-selected="false">Mi avance</button><button type="button" data-t="right" role="tab" aria-selected="false">Resultados</button><button type="button" data-t="study" role="tab" aria-selected="false">Guía B1</button></div>
+  <div class="layout" id="layout" data-tab="main">
+    <aside class="side left" id="left" aria-label="Menú, avance y ajustes"></aside>
+    <div class="center" id="center"><div id="app"></div></div>
+    <aside class="side right" id="right" aria-label="Resultados por nivel y tema"></aside>
+  </div>
+</main>
+
+<script src="study-guide.js"></script>
+<script src="study-notes.js"></script>
+<script src="verb-forms.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

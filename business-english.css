@@ -1,0 +1,194 @@
+.biz-meta-title{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ink)}
+#biz-layout{grid-template-columns:262px minmax(0,700px) 286px;align-items:stretch}
+#biz-left,#biz-right{align-content:start}
+.biz-side-link{display:block;width:100%;text-align:left;background:transparent;border:1.5px solid var(--rule);border-radius:3px;padding:7px 9px;font-size:14px;color:var(--ink)}
+.biz-side-link:hover{border-color:var(--accent)}
+.biz-side-link[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.biz-side-link .biz-done-mark{float:right;color:var(--green);font-weight:700}
+.biz-side-link .biz-mastery-mark{display:inline-block;margin-left:6px;padding:1px 4px;border-radius:2px;background:var(--study-wash);color:var(--accent);font-size:10px;font-weight:700}
+.biz-side-phase{display:grid;gap:5px;margin-bottom:13px}
+.biz-side-phase h4{font:700 14px var(--serif);margin:0 0 2px;color:var(--muted)}
+.biz-side-title{font:700 16px/1.35 var(--serif);margin:0 0 6px;overflow-wrap:anywhere}
+.biz-side-copy{font-size:14px;color:var(--muted);margin:6px 0}
+.biz-callout{padding:12px 14px;border-left:3px solid var(--accent);background:var(--study-wash);margin:12px 0}
+.biz-kicker{margin:0 0 5px;color:var(--red);font-size:12px;font-weight:700;letter-spacing:.04em}
+.biz-home h1,.biz-lesson h1,.biz-quiz-panel h1{font-size:clamp(28px,5vw,38px);margin:0 0 9px}
+.biz-home>p,.biz-lesson-intro{max-width:58ch;color:var(--muted);margin:0 0 14px}
+.biz-home-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0}
+.biz-home-stats div{padding:9px;border:1px solid var(--rule);border-radius:3px}
+.biz-home-stats b{display:block;font:700 22px var(--serif)}
+.biz-home-stats span{font-size:13px;color:var(--muted)}
+.biz-home h2{font:700 21px var(--serif);margin:22px 0 8px}
+.biz-study-cycle{list-style:none;padding:0;margin:10px 0;display:grid;gap:7px;counter-reset:study-step}
+.biz-study-cycle li{counter-increment:study-step;display:grid;grid-template-columns:22px minmax(120px,160px) 1fr;gap:8px;padding:10px 12px;border:1px solid var(--rule);border-left:3px solid var(--accent)}
+.biz-study-cycle li::before{content:counter(study-step,decimal-leading-zero);font-weight:700;color:var(--accent)}
+.biz-study-cycle li strong{font:700 15px var(--serif)}
+.biz-study-cycle li span,.biz-week-plan p{font-size:14px;color:var(--muted);margin:0}
+.biz-week-plan{display:grid;gap:7px}
+.biz-week-plan p{padding:9px 11px;border-bottom:1px solid var(--rule)}
+.biz-week-plan strong{color:var(--ink)}
+.biz-home-phases{display:grid;gap:8px}
+.biz-home-phase{padding:11px 13px;border:1px solid var(--rule);border-left:3px solid var(--accent)}
+.biz-home-phase h3{font:700 16px var(--serif);margin:0 0 3px}
+.biz-home-phase p{margin:0;color:var(--muted);font-size:14px}
+.biz-home-progress{display:grid;grid-template-columns:minmax(100px,auto) 1fr auto;align-items:center;gap:12px;padding:12px;border:1px solid var(--rule);border-radius:4px}
+.biz-home-progress>div:first-child{display:grid;gap:2px}
+.biz-home-progress>div:first-child span{font-size:13px;color:var(--muted)}
+.biz-home-progress>div:first-child strong{font:700 21px var(--serif)}
+.biz-home-progress .pbar{margin:0}
+.biz-phase-heading{display:flex;align-items:flex-start;gap:10px}
+.biz-phase-number{font:700 18px var(--serif);color:var(--accent)}
+.biz-phase-lessons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:10px}
+.biz-roadmap-lesson{display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:6px;min-height:40px;padding:7px 9px;text-align:left;border:1px solid var(--rule);border-radius:3px;background:transparent;color:var(--ink);font-size:14px}
+.biz-roadmap-lesson:hover{border-color:var(--accent)}
+.biz-roadmap-lesson>span{color:var(--muted);font-size:12px}
+.biz-roadmap-lesson>b{color:var(--green)}
+.biz-primary{display:inline-block;margin-top:8px;padding:9px 16px;border-radius:4px;background:var(--btn-bg);color:var(--btn-ink);font-weight:700;text-decoration:none}
+.biz-primary:hover{filter:brightness(1.1)}
+.biz-lesson-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.biz-lesson h1{margin-bottom:5px}
+.biz-lesson-intro{font-size:16px}
+.biz-lesson-progress{height:3px;margin:10px 0 14px;background:var(--rule)}
+.biz-lesson-progress i{display:block;height:100%;background:var(--accent);transition:width .2s ease}
+.biz-mark{flex:none;border:1.5px solid var(--rule);border-radius:3px;padding:7px 9px;background:transparent;color:var(--ink);font-size:13px;font-weight:700}
+.biz-mark[aria-pressed="true"]{border-color:var(--green);color:var(--green)}
+.biz-subtabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:4px 0 10px;border-bottom:1px solid var(--rule)}
+.biz-subtab{min-height:42px;background:transparent;border:1.5px solid var(--rule);border-radius:3px;padding:6px 10px;font-size:14px;color:var(--ink);overflow-wrap:anywhere}
+.biz-subtab:hover{border-color:var(--ink)}
+.biz-subtab.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.biz-subtab.quiz{border-color:var(--red);color:var(--red)}
+.biz-lesson-body{padding-top:10px}
+.biz-lesson-body h2{font:700 21px/1.25 var(--serif);margin:0 0 10px}
+.biz-lesson-body h3{font:700 17px/1.3 var(--serif);margin:17px 0 6px}
+.biz-lesson-body p{margin:0 0 10px}
+.biz-lesson-body .fine{margin-top:9px}
+.biz-phrase-list{display:grid;gap:7px}
+.biz-phrase{padding:10px 12px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:3px}
+.biz-phrase>p{font-weight:700}
+.biz-phrase details{font-size:13px;color:var(--muted)}
+.biz-phrase details p{margin:6px 0 0}
+.biz-formula-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.biz-formula-card{display:grid;align-content:start;gap:7px;padding:11px;border:1px solid var(--rule);border-top:3px solid var(--accent);border-radius:3px}
+.biz-formula-label{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.biz-formula-card code{color:var(--ink);font:600 14px/1.5 var(--sans);overflow-wrap:anywhere}
+.biz-formula-card>p,.biz-vocab-card>div>p{margin:0;font-size:14px}
+.biz-formula-card details,.biz-vocab-card details{font-size:13px;color:var(--muted)}
+.biz-formula-card details p,.biz-vocab-card details p{margin:5px 0 0}
+.biz-vocab-search-label{display:block;margin:9px 0 5px;font-size:14px;font-weight:700}
+.biz-vocab-search{width:100%;padding:9px 11px;border:1.5px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink);font:inherit}
+.biz-vocab-search:focus{outline:2px solid var(--accent);outline-offset:2px}
+.biz-vocab-count{margin:6px 0;color:var(--muted);font-size:13px}
+.biz-vocab-list{display:grid;gap:6px}
+.biz-vocab-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(110px,auto);align-items:start;gap:10px;padding:9px 10px;border:1px solid var(--rule);border-radius:3px}
+.biz-vocab-card>div>strong{display:block;margin-bottom:4px}
+.biz-vocab-card details{max-width:180px}
+.biz-vocab-empty{padding:8px 0;color:var(--muted);font-size:14px}
+[hidden].biz-vocab-card{display:none}
+.biz-language-table{width:100%;border-collapse:collapse;font-size:14.5px;line-height:1.4}
+.biz-language-table th,.biz-language-table td{padding:8px 9px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+.biz-language-table th{font:700 14px var(--serif);background:color-mix(in srgb,var(--rule) 25%,var(--paper))}
+.biz-language-table td:first-child{min-width:145px;font-weight:700}
+.biz-table-scroll{max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-inline:contain;scrollbar-width:thin}
+.biz-formula-scroll-help{font-size:13px;color:var(--muted)}
+.biz-formula-table-scroll{width:100%;max-height:min(55vh,520px);overflow:auto;overscroll-behavior:contain;scrollbar-width:auto;scrollbar-color:var(--accent) var(--rule);scrollbar-gutter:stable;touch-action:pan-x pan-y}
+.biz-formula-table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.biz-formula-table-scroll .biz-language-table{width:100%;min-width:980px}
+.biz-formula-table-scroll thead{position:sticky;top:0;z-index:1}
+.biz-formula-table-scroll::-webkit-scrollbar{width:12px;height:12px}
+.biz-formula-table-scroll::-webkit-scrollbar-track{background:var(--rule)}
+.biz-formula-table-scroll::-webkit-scrollbar-thumb{background:var(--accent);border:2px solid var(--rule);border-radius:8px}
+.biz-toolkit-section>summary{font-weight:700;cursor:pointer}
+.biz-toolkit-section[open]>summary{margin-bottom:8px}
+.biz-reference-table-scroll{width:100%;max-height:min(42vh,400px);overflow:auto;overscroll-behavior:contain;scrollbar-width:auto;scrollbar-color:var(--accent) var(--rule);scrollbar-gutter:stable;touch-action:pan-x pan-y}
+.biz-reference-table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.biz-reference-table-scroll .biz-language-table{width:100%;min-width:720px}
+.biz-reference-table-scroll thead{position:sticky;top:0;z-index:1}
+.biz-reference-table-scroll::-webkit-scrollbar{width:12px;height:12px}
+.biz-reference-table-scroll::-webkit-scrollbar-track{background:var(--rule)}
+.biz-reference-table-scroll::-webkit-scrollbar-thumb{background:var(--accent);border:2px solid var(--rule);border-radius:8px}
+.biz-points{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.biz-points li{padding:9px 0;border-bottom:1px dashed var(--rule);font-size:15px}
+.biz-example{margin:10px 0;padding:12px 14px;border-left:3px solid var(--accent);background:var(--study-wash);white-space:pre-line;font-size:15px}
+.biz-example p{margin:0 0 7px}
+.biz-example p:last-child{margin:0}
+.biz-key{font-weight:700;color:var(--accent)}
+.biz-error{padding:10px 12px;margin:9px 0;border-left:3px solid var(--red);background:color-mix(in srgb,var(--red) 7%,var(--paper))}
+.biz-error p{margin:0 0 5px}
+.biz-lesson-actions{display:flex;justify-content:space-between;gap:10px;margin-top:14px}
+.biz-lesson-actions button{border:1.5px solid var(--rule);border-radius:3px;padding:7px 11px;background:transparent;font-size:14px}
+.biz-lesson-actions span{align-self:center;color:var(--muted);font-size:13px}
+.biz-lesson-actions button:hover:not(:disabled){border-color:var(--ink)}
+.biz-lesson-actions button:disabled{opacity:.45;cursor:default}
+.biz-draft-label{display:block;margin:10px 0 5px;font-weight:700}
+.biz-draft{display:block;width:100%;min-width:0;padding:10px 12px;border:1.5px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink);font:inherit;line-height:1.5;resize:vertical}
+.biz-draft:focus{outline:2px solid var(--accent);outline-offset:2px}
+.biz-word-count{font-size:13px;color:var(--muted);margin:4px 0}
+.biz-capstone>h1{font-size:clamp(27px,5vw,36px);margin:0 0 9px}
+.biz-capstone>h2{font:700 21px var(--serif);margin:22px 0 8px}
+.biz-capstone-activities{display:grid;gap:12px}
+.biz-capstone-activity{padding:12px;border:1px solid var(--rule);border-left:3px solid var(--accent)}
+.biz-capstone-activity h3{font:700 17px var(--serif);margin:0 0 6px}
+.biz-capstone-activity>p{margin:0 0 8px}
+.biz-capstone-checks label{display:flex;align-items:flex-start;gap:7px}
+.biz-capstone-checks input{flex:none;margin-top:5px}
+.biz-quiz-next:disabled{opacity:.5;cursor:not-allowed}
+.biz-quiz-panel h1{font-size:26px}
+.biz-quiz-intro{color:var(--muted);font-size:15px}
+.biz-quiz-count{margin:14px 0 4px;color:var(--muted);font-size:14px}
+.biz-quiz-question{font:600 19px/1.4 var(--serif);margin:4px 0 12px}
+.biz-quiz-options{display:grid;gap:8px}
+.biz-quiz-option{width:100%;border:1.5px solid var(--rule);border-radius:4px;padding:10px 12px;background:transparent;text-align:left;font-size:16px}
+.biz-quiz-option:hover:not(:disabled){border-color:var(--ink)}
+.biz-quiz-option:disabled{cursor:default}
+.biz-quiz-option.is-correct{border-color:var(--green);color:var(--green);font-weight:700}
+.biz-quiz-option.is-wrong{border-color:var(--red);color:var(--red)}
+.biz-quiz-feedback{margin:12px 0;padding:9px 12px;border-left:3px solid var(--red);font-size:15px}
+.biz-quiz-feedback.is-correct{border-color:var(--green)}
+.biz-quiz-next,.biz-quiz-reset{border:0;border-radius:4px;padding:9px 14px;background:var(--btn-bg);color:var(--btn-ink);font-weight:700}
+.biz-quiz-result{padding:12px 0}
+.biz-quiz-score{font:700 30px var(--serif);margin:0 0 7px}
+.biz-check-result{padding:12px 0}
+.biz-check-result.is-pass{border-left:3px solid var(--green);padding-left:14px}
+.biz-check-result.is-retry{border-left:3px solid var(--red);padding-left:14px}
+.biz-check-result h2{font:700 21px/1.25 var(--serif);margin:0 0 8px}
+.biz-review-date{font-size:14px;color:var(--muted);padding:8px 10px;border-left:3px solid var(--accent);background:var(--study-wash)}
+.biz-answer-key{margin:9px 0;padding:9px 11px;border:1px solid var(--rule);border-radius:3px}
+.biz-answer-key summary{font-weight:700;cursor:pointer}
+.biz-answer-key[open] summary{margin-bottom:8px}
+.biz-review-list{display:grid;gap:6px}
+.biz-review-link{display:grid;gap:3px;width:100%;padding:8px 10px;text-align:left;border:1px solid var(--rule);border-radius:3px;background:transparent;color:var(--ink);font-size:14px}
+.biz-review-link:hover{border-color:var(--accent)}
+.biz-review-link span{font-size:12px;color:var(--muted)}
+.biz-progress-label{font-size:14px;color:var(--muted);margin:7px 0}
+.biz-listening-note{padding:10px 12px;border:1px dashed var(--rule);color:var(--muted);font-size:14px}
+.biz-listening-actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 5px}
+.biz-audio-button,.biz-audio-stop{border:1.5px solid var(--rule);border-radius:3px;padding:8px 12px;background:transparent;color:var(--ink);font-weight:700}
+.biz-audio-button:hover,.biz-audio-stop:hover{border-color:var(--accent)}
+.biz-audio-status{min-height:1.5em;font-size:14px;color:var(--muted)}
+.biz-empty-lesson{margin:10px 0;color:var(--muted)}
+.biz-lesson-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.biz-lesson-nav .btn{font-size:15px;padding:9px 15px}
+@media(max-width:1099px){
+  #biz-layout{grid-template-columns:minmax(0,700px)}
+  #biz-panel-tabs{display:flex}
+  #biz-layout .side{position:static;max-height:none;overflow:visible}
+  #biz-layout[data-tab="main"] #biz-left,#biz-layout[data-tab="main"] #biz-right{display:none}
+  #biz-layout[data-tab="left"] #biz-center,#biz-layout[data-tab="left"] #biz-right{display:none}
+  #biz-layout[data-tab="right"] #biz-center,#biz-layout[data-tab="right"] #biz-left{display:none}
+}
+@media(max-width:600px){
+  .biz-meta-title{display:none}
+  .biz-home-progress{grid-template-columns:1fr auto}
+  .biz-home-progress .pbar{grid-row:2;grid-column:1/-1}
+  .biz-home-progress>.btn{grid-column:1/-1}
+  .biz-phase-lessons{grid-template-columns:1fr}
+  .biz-lesson-head{display:block}
+  .biz-mark{margin:0 0 9px}
+  .biz-subtabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .biz-formula-list{grid-template-columns:1fr}
+  .biz-vocab-card{grid-template-columns:1fr}
+  .biz-vocab-card details{max-width:none}
+  .biz-language-table{min-width:560px}
+  .biz-lesson-actions button{flex:1}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.biz-lesson-progress i{transition:none}}
